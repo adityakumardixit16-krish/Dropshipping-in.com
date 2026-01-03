@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Products</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,7 +17,7 @@
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
       margin-top: 30px;
     }
@@ -27,7 +28,6 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
     }
-    
     .card img {
       width: 100%;
       border-radius: 5px;
@@ -47,6 +47,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <h1>Our Products</h1>
@@ -54,77 +55,33 @@
 <div class="products">
 
   <div class="card">
-    <img src="https://via.placeholder.com/300">
-    <h3>Product One</h3>
-    <p class="price">₹999</p>
-    <a class="btn" href="#">Buy Now</a>
+    <img src="images/earbuds.jpg">
+    <h3>Wireless Earbuds</h3>
+    <p class="price">₹1499</p>
+    <a class="btn" href="product.html?name=Wireless%20Earbuds&price=1499">
+      Buy Now
+    </a>
   </div>
 
   <div class="card">
-    <img src="https://via.placeholder.com/300">
-    <h3>Product Two</h3>
-    <p class="price">₹1499</p>
-    <a class="btn"
-href="https://wa.me/91255060330?text=Hello%20I%20want%20to%20order%20Wireless%20Earbuds%20for%20₹1499">
-Buy Now
-</a>
+    <img src="images/smartwatch.jpg">
+    <h3>Smart Watch</h3>
+    <p class="price">₹2499</p>
+    <a class="btn" href="product.html?name=Smart%20Watch&price=2499">
+      Buy Now
+    </a>
   </div>
+
+  <div class="card">
+    <img src="images/speaker.jpg">
+    <h3>Bluetooth Speaker</h3>
+    <p class="price">₹1999</p>
+    <a class="btn" href="product.html?name=Bluetooth%20Speaker&price=1999">
+      Buy Now
+    </a>
+  </div>
+
 </div>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Products | My Store</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<h2 style="text-align:center; margin-top:30px;">Our Products</h2>
-
-<div class="product-box">
-  <h3>Wireless Earbuds</h3>
-  <p>Price: ₹1,499</p>
-  <a href="https://wa.me/9125506033?text=I%20want%20to%20order%20Wireless%20Earbuds%20Price%201499" class="buy-btn">
-<a href="product.html?name=Wireless%20Earbuds&price=1499" class="buy-btn">
-Buy Now
-</a>
-
-</a>
-</div>
-
-<div class="product-box">
-  <h3>Smart Watch</h3>
-  <p>Price: ₹2,499</p>
-  <a href="https://wa.me/9125506033?text=I%20want%20to%20order%20Smart%20Watch%20Price%202499" class="buy-btn">
-<a href="product.html?name=Smart%20Watch&price=2499" class="buy-btn">
-Buy Now
-</a>
-
-</a>
-</div>
-  
-<div class="product-box">
-  <h3>Bluetooth Speaker</h3>
-  <p>Price: ₹1,999</p>
-  <a href="https://wa.me/9125506033?text=I%20want%20to%20order%20Bluetooth%20Speaker%20Price%201999" class="buy-btn">
-<a href="product.html?name=Bluetooth%20Speaker&price=1999" class="buy-btn">
-Buy Now
-</a>
-
-</a>
-</div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Order Page</title>
-</head>
-<body>
-  <h1>Order Now</h1>
-  <p>Thank you for choosing our product.</p>
 </body>
 </html>
