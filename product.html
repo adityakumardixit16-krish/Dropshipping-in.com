@@ -106,7 +106,7 @@
       productImage.src = images[name] || "images/default.jpg";
 
       const message = `I want to order ${name} Price ₹${price}`;
-      whatsappLink.href = "https://wa.me/919876543210?text=" + encodeURIComponent(message);
+      whatsappLink.href = "https://wa.me/9125506033?text=" + encodeURIComponent(message);
     }
 
     // COD form submit
@@ -116,10 +116,12 @@
       const cphone = document.getElementById("customer-phone").value;
       const caddress = document.getElementById("customer-address").value;
       const orderMessage = `Order via COD:\nProduct: ${name}\nPrice: ₹${price}\nName: ${cname}\nPhone: ${cphone}\nAddress: ${caddress}`;
-      window.open("https://wa.me/919876543210?text=" + encodeURIComponent(orderMessage), "_blank");
+      window.open("https://wa.me/9125506033?text=" + encodeURIComponent(orderMessage), "_blank");
     });
   </script>
 
 </body>
 </html>
+
+
 
