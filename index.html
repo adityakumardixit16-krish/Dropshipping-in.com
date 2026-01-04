@@ -10,7 +10,7 @@
   <meta property="og:title" content="SwiftKart – Online Shopping Store">
   <meta property="og:description" content="Shop trending products at best prices.">
   <meta property="og:image" content="css/images/banner.jpg">
-  <meta property="og:url" content="https://adityakumardixit16-krish.github.io/dropshipping.in/">
+  <meta property="og:url" content="https://adityakumardixit16-krish.github.io/Dropshipping-in.2.0/">
   <meta property="og:type" content="website">
 
   <style>
@@ -19,16 +19,25 @@
       font-family: Arial, sans-serif;
       background: #f5f5f5;
     }
+
+    /* HERO / BANNER */
     header {
-      background: #111;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("css/images/banner.jpg") center/cover no-repeat;
       color: #fff;
-      padding: 20px;
+      padding: 90px 20px;
       text-align: center;
     }
-    section {
-      padding: 30px;
-      text-align: center;
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
     }
+
+    header p {
+      font-size: 18px;
+    }
+
     .btn {
       display: inline-block;
       padding: 12px 25px;
@@ -38,62 +47,105 @@
       border-radius: 5px;
       margin-top: 20px;
     }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* PRODUCTS */
     .products {
       background: #fff;
     }
+
+    .product-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
     .product-box {
       background: #f1f1f1;
-      padding: 15px;
-      margin: 15px auto;
       width: 250px;
-      border-radius: 5px;
+      padding: 15px;
+      border-radius: 8px;
     }
+
+    .product-box img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .product-box h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product-box button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
     footer {
       background: #111;
       color: #fff;
       text-align: center;
-      padding: 10px;
+      padding: 12px;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- HERO -->
   <header>
-    <h1>Welcome to My Dropshipping Store</h1>
-    <p>India’s Trusted Online Store</p>
+    <h1>Welcome to SwiftKart</h1>
+    <p>India’s Trusted Online Shopping Store</p>
+    <a href="#products" class="btn">View Products</a>
   </header>
 
+  <!-- INTRO -->
   <section>
     <h2>Trending Products</h2>
     <p>High quality products delivered to your door.</p>
-    <a href="#products" class="btn">View Products</a>
   </section>
 
+  <!-- PRODUCTS -->
   <section class="products" id="products">
     <h2>Featured Products</h2>
 
-    <div class="product-box">
-      <h3>Wireless Earbuds</h3>
-      <p>Price: ₹1,499</p>
-      <button>Buy Now</button>
-    </div>
+    <div class="product-grid">
+      <div class="product-box">
+        <img src="css/images/product-1.jpg" alt="Wireless Earbuds">
+        <h3>Wireless Earbuds</h3>
+        <p>Price: ₹1,499</p>
+        <button>Buy Now</button>
+      </div>
 
-    <div class="product-box">
-      <h3>Smart Watch</h3>
-      <p>Price: ₹2,499</p>
-      <button>Buy Now</button>
-    </div>
+      <div class="product-box">
+        <img src="css/images/product-2.jpg" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>Price: ₹2,499</p>
+        <button>Buy Now</button>
+      </div>
 
-    <div class="product-box">
-      <h3>Bluetooth Speaker</h3>
-      <p>Price: ₹1,999</p>
-      <button>Buy Now</button>
+      <div class="product-box">
+        <img src="css/images/product-3.jpg" alt="Bluetooth Speaker">
+        <h3>Bluetooth Speaker</h3>
+        <p>Price: ₹1,999</p>
+        <button>Buy Now</button>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 My Store. All rights reserved.</p>
+    <p>© 2026 SwiftKart. All rights reserved.</p>
   </footer>
 
 </body>
